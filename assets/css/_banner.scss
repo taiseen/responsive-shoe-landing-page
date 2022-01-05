@@ -1,0 +1,48 @@
+.banner {
+    @include flex(center);
+
+    .content {
+        flex: 1 1 41rem;
+
+        span {
+            font-size: 2.5rem;
+            color    : $red;
+        }
+
+        h3 {
+            @include title(4rem);
+            padding-top: 1rem;
+        }
+
+        p {
+            @include paragraphText(1.7rem);
+            padding: 1rem 0;
+        }
+
+        .btn {
+            margin-top   : 1rem;
+            display      : inline-block;
+            border-radius: 5rem;
+            padding      : 1.2rem 3rem;
+            border       : $border;
+            cursor       : pointer;
+            background   : none;
+            color        : $black;
+            font-size    : 2rem;
+
+            &:hover {
+                background  : $red;
+                border-color: $red;
+                color       : $white;
+            }
+        }
+    }
+
+    .image {
+        flex: 1 1 41rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}

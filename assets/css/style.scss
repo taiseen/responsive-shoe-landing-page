@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 4 Jan 2022 */
+
+* {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : none;
+    list-style     : none;
+    user-select    : none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing     : border-box;
+    transition     : all .1s linear;
+    font-family    : 'Nunito', sans-serif;
+}
+
+@import 'variable';
+
+html {
+    font-size : 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $red;
+    }
+}
+
+body {
+    background           : url(../img/bg.jpg) no-repeat;
+    background-size      : cover;
+    background-position  : center;
+    background-attachment: fixed;
+    padding-left         : 0;
+
+    &.active {
+        padding-left: 30rem;
+    }
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+
+@import 'header';
+
+@import 'banner';
+
+@import 'responsiveness';

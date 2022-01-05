@@ -1,0 +1,32 @@
+$red         : #ed2d34;
+$black       : #444;
+$white       : #FFF;
+$light-color : #666;
+$border      : .2rem solid $black;
+
+
+@mixin grid($value) {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap                  : 2rem;
+}
+
+@mixin flex($align) {
+    display    : flex;
+    align-items: $align;
+    flex-wrap  : wrap-reverse;
+    gap        : 3rem;
+}
+
+@mixin title($titleSize) {
+    font-size     : $titleSize;
+    color         : $black;
+    text-transform: capitalize;
+}
+
+@mixin paragraphText($paragraphSize) {
+    font-size  : $paragraphSize;
+    color      : $light-color;
+    line-height: 2;
+    padding    : 1rem 0;
+}

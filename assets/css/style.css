@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+/* 4 Jan 2022 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  user-select: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  transition: all .1s linear;
+  font-family: 'Nunito', sans-serif; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background: transparent; }
+  html::-webkit-scrollbar-thumb {
+    background: #ed2d34; }
+
+body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-left: 0; }
+  body.active {
+    padding-left: 30rem; }
+
+section {
+  padding: 5rem 9%; }
+
+#menu-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #FFF;
+  background-color: #ed2d34;
+  cursor: pointer;
+  z-index: 2;
+  transition: left .3s ease; }
+  #menu-btn:hover {
+    background-color: #FFF;
+    color: #444; }
+  #menu-btn.fa-times {
+    left: 24rem; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: -31rem;
+  height: 100vh;
+  width: 30rem;
+  background-color: #ed2d34;
+  padding: 2rem;
+  z-index: 1;
+  transition: left .3s ease; }
+  .header.active {
+    left: 0; }
+  .header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #FFF; }
+  .header .navbar {
+    padding: 30% 0; }
+    .header .navbar a {
+      display: block;
+      margin: 2rem 0;
+      font-size: 2rem;
+      color: #FFF;
+      text-transform: capitalize; }
+      .header .navbar a:hover {
+        text-decoration: underline;
+        text-underline-offset: .7rem; }
+  .header .share {
+    text-align: center; }
+    .header .share a {
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem;
+      font-size: 2rem;
+      color: #444;
+      background: #FFF;
+      margin: 0 .3rem; }
+      .header .share a:hover {
+        color: #FFF;
+        background: #444; }
+  .header .credit {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #FFF;
+    margin-top: 3rem;
+    line-height: 3rem; }
+
+.banner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 3rem; }
+  .banner .content {
+    flex: 1 1 41rem; }
+    .banner .content span {
+      font-size: 2.5rem;
+      color: #ed2d34; }
+    .banner .content h3 {
+      font-size: 4rem;
+      color: #444;
+      text-transform: capitalize;
+      padding-top: 1rem; }
+    .banner .content p {
+      font-size: 1.7rem;
+      color: #666;
+      line-height: 2;
+      padding: 1rem 0;
+      padding: 1rem 0; }
+    .banner .content .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: 5rem;
+      padding: 1.2rem 3rem;
+      border: 0.2rem solid #444;
+      cursor: pointer;
+      background: none;
+      color: #444;
+      font-size: 2rem; }
+      .banner .content .btn:hover {
+        background: #ed2d34;
+        border-color: #ed2d34;
+        color: #FFF; }
+  .banner .image {
+    flex: 1 1 41rem; }
+    .banner .image img {
+      width: 100%; }
+
+@media screen and (max-width: 1200px) {
+  body.active {
+    padding-left: 0; }
+
+  header.active {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8); } }
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%; }
+
+  section {
+    padding: 3rem 2rem; } }
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%; }
+
+  .banner .content h3 {
+    font-size: 3rem; } }
+
+/*# sourceMappingURL=style.css.map */
