@@ -1,4 +1,4 @@
-# Responsive Shoe Landing Page | [Live-Link](https://taiseen.github.io/responsive-shoe-landing-page)
+# Nike Shoe - Landing Page | [Live-Link](https://taiseen.github.io/responsive-shoe-landing-page)
 
 ## Inspire & Learning From ==> [this link](https://youtu.be/azzvAk_r9cE)
 
@@ -7,3 +7,4 @@
 - Close Button Functionality 
 - SideBar Navigation Open/Close
 - Responsiveness
+- Using Swiper 

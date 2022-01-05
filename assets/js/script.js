@@ -1,4 +1,4 @@
-// 1 Jan 2022
+// 5 Jan 2022
 
 const menuBtn = document.getElementById('menu-btn');
 const header = document.querySelector('.header');
@@ -20,25 +20,50 @@ window.addEventListener('onscroll', () => {
 });
 
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+let allProductsBtn = document.querySelectorAll('.slide .btn');
+let allProductsImg = document.querySelectorAll('.slide img');
+let productPreviewContainer = document.querySelector('.product-preview-container');
+let productPreviewImg = document.querySelector('.product-preview img');
+let productPreviewClose = document.querySelector('.product-preview .fa-times');
+
+console.log(productPreviewContainer)
+
+allProductsBtn.forEach((detailsBtn, index) => {
+
+    detailsBtn.addEventListener('click', () => {
+
+        let productName = detailsBtn.getAttribute('data-product');
+        let currentImg = allProductsImg[index].src;
+
+        productPreviewContainer.style.display = 'block';
+        productPreviewImg.src = currentImg;
+    });
+});
+
+// close popup preview panel... 
+productPreviewClose.addEventListener('click', () => {
+    productPreviewContainer.style.display = 'none';
+});
+
+
+
+
+
+
+var swiper = new Swiper(".products-slider", {
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    centeredSliders: true,
     breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        0: {
+            slidesPerView: 1,
         },
         768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 2,
         },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+        911: {
+            slidesPerView: 3,
         },
     },
 });

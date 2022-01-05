@@ -1,0 +1,67 @@
+.product-preview-container {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    min-height      : 100vh;
+    width           : 100%;
+    z-index         : 1200;
+    background-color: rgba(0, 0, 0, .8);
+    display         : none;
+
+    .product-preview {
+        @include flex(center);
+        background-color: $white;
+        padding         : 9%;
+        position        : relative;
+
+        .fa-times {
+            position  : absolute;
+            top       : 2rem;
+            right     : 2rem;
+            font-size : 4rem;
+            cursor    : pointer;
+            color     : $light-color;
+            transition: .2s ease;
+
+            &:hover {
+                color    : $red;
+                transform: rotate(90deg);
+            }
+
+        }
+
+        .image {
+            flex        : 1 1 40rem;
+            margin-right: 3rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex: 1 1 40rem;
+
+            h3 {
+                @include title(3rem);
+            }
+
+            p {
+                @include paragraphText(1.6rem);
+            }
+
+            .stars {
+                padding  : 1rem 0;
+                font-size: 1.7rem;
+            }
+
+            i {
+                color: $red;
+            }
+
+            span {
+                color: $light-color;
+            }
+        }
+    }
+}

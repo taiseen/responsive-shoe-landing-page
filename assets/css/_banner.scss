@@ -19,23 +19,6 @@
             padding: 1rem 0;
         }
 
-        .btn {
-            margin-top   : 1rem;
-            display      : inline-block;
-            border-radius: 5rem;
-            padding      : 1.2rem 3rem;
-            border       : $border;
-            cursor       : pointer;
-            background   : none;
-            color        : $black;
-            font-size    : 2rem;
-
-            &:hover {
-                background  : $red;
-                border-color: $red;
-                color       : $white;
-            }
-        }
     }
 
     .image {
@@ -44,5 +27,24 @@
         img {
             width: 100%;
         }
+    }
+}
+
+.btn {
+    margin-top    : 1rem;
+    display       : inline-block;
+    border-radius : 5rem;
+    padding       : 1.2rem 3rem;
+    border        : $border;
+    cursor        : pointer;
+    background    : none;
+    color         : $black;
+    font-size     : 2rem;
+    text-transform: capitalize;
+
+    &:hover {
+        background  : $red;
+        border-color: $red;
+        color       : $white;
     }
 }
