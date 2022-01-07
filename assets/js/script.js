@@ -68,3 +68,23 @@ var swiper = new Swiper(".products-slider", {
     },
 });
 
+
+
+var swiper = new Swiper(".review-slider", {
+    loop: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    centeredSliders: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        911: {
+            slidesPerView: 3,
+        },
+    },
+});
+

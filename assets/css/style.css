@@ -227,6 +227,46 @@ section {
       .product-preview-container .product-preview .content span {
         color: #666; }
 
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem; }
+  .service .box {
+    text-align: center;
+    padding: 2rem; }
+    .service .box i {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #ed2d34; }
+    .service .box p {
+      font-size: 1.7rem;
+      color: #666;
+      line-height: 2;
+      padding: 1rem 0; }
+
+.reviews .slide {
+  text-align: center;
+  padding: 2rem; }
+  .reviews .slide i {
+    font-size: 4rem;
+    color: #666;
+    margin-bottom: 1rem; }
+  .reviews .slide p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0; }
+  .reviews .slide img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: 1rem 0; }
+  .reviews .slide h3 {
+    font-size: 1.7rem;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0; }
+
 @media screen and (max-width: 1200px) {
   body.active {
     padding-left: 0; }

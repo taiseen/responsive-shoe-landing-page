@@ -1,0 +1,18 @@
+.service {
+    @include grid(30rem);
+
+    .box {
+        text-align: center;
+        padding   : 2rem;
+
+        i {
+            font-size    : 4rem;
+            margin-bottom: 1rem;
+            color        : $red;
+        }
+
+        p {
+            @include paragraphText(1.7rem);
+        }
+    }
+}
