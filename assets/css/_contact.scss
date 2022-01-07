@@ -1,0 +1,75 @@
+.contact {
+
+    .row {
+        @include flex(center);
+        flex-wrap: wrap;
+
+        form {
+            flex         : 1 1 41rem;
+            margin-bottom: 1.5rem;
+
+            .box {
+                padding      : 1.5rem;
+                margin-bottom: 1rem;
+                font-size    : 1.6rem;
+                border-bottom: $border;
+                width        : 100%;
+
+                &:focus {
+                    border-color: $red;
+                }
+            }
+        }
+
+        .contact-info {
+            flex: 1 1 41rem;
+
+            h3 {
+                padding-bottom: 1rem;
+                @include title(3rem);
+            }
+
+            .grapgh {
+                @include paragraphText(1.8rem);
+            }
+
+            .icons {
+                padding: 1.5rem 0;
+                @include flex(center);
+
+                i {
+
+                    height          : 5rem;
+                    width           : 5rem;
+                    line-height     : 5rem;
+                    border-radius   : 50%;
+                    font-size       : 2rem;
+                    background-color: $red;
+                    color           : $white;
+                    text-align      : center;
+                }
+
+                p {
+                    @include paragraphText(2rem);
+                    padding: 0;
+                }
+            }
+
+            .share {
+                padding-top: 2rem;
+
+                a {
+
+                    font-size   : 3rem;
+                    margin-right: 2.2rem;
+                    color       : $light-color;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+
+            }
+        }
+    }
+}
