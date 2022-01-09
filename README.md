@@ -1,4 +1,4 @@
-# Nike Shoe - Landing Page | [Live-Link](https://taiseen.github.io/shoe-landing-page)
+# Nike Shoe - Landing Page | [Live-Link](https://taiseen.github.io/shoe-landing-page){:target="_blank" rel="noopener"}
 
 ## Inspire & Learning From ==> [this link](https://youtu.be/azzvAk_r9cE)
 
