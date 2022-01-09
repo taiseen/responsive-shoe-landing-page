@@ -10,7 +10,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-window.addEventListener('onscroll', () => {
+window.addEventListener('scroll', () => {
 
     if (window.innerWidth < 1200) {
         menuBtn.classList.remove('fa-times');
