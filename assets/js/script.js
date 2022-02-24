@@ -12,7 +12,7 @@ menuBtn.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
 
-    if (window.innerWidth < 1200) {
+    if (window.innerWidth < 100) {
         menuBtn.classList.remove('fa-times');
         header.classList.remove('active');
         document.body.classList.remove('active');
@@ -45,16 +45,22 @@ productPreviewClose.addEventListener('click', () => {
     productPreviewContainer.style.display = 'none';
 });
 
-
-
-
-
-
 var swiper = new Swiper(".products-slider", {
     loop: true,
     spaceBetween: 20,
     grabCursor: true,
-    centeredSliders: true,
+    centeredSlides: true,
+
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
     breakpoints: {
         0: {
             slidesPerView: 1,
@@ -74,7 +80,19 @@ var swiper = new Swiper(".review-slider", {
     loop: true,
     spaceBetween: 20,
     grabCursor: true,
-    centeredSliders: true,
+    centeredSlides: true,
+
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+
     breakpoints: {
         0: {
             slidesPerView: 1,

@@ -1,12 +1,14 @@
 .reviews {
 
+    ma-bottom       : 1rem;
+
     .slide {
         text-align: center;
         padding   : 2rem;
 
         i {
             font-size    : 4rem;
-            color        : $light-color;
+            color        : var(--lightColor);
             margin-bottom: 1rem;
         }
 

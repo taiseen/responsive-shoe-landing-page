@@ -4,27 +4,27 @@
     left            : 0;
     min-height      : 100vh;
     width           : 100%;
-    z-index         : 3;
+    z-index         : 30000;
     background-color: rgba(0, 0, 0, .8);
     display         : none;
 
     .product-preview {
         @include flex(center);
-        background-color: $white;
-        padding         : 9%;
         position        : relative;
+        padding         : 9%;
+        background-color: var(--white);
 
         .fa-times {
-            position  : absolute;
-            top       : 2rem;
-            right     : 2rem;
-            font-size : 4rem;
-            cursor    : pointer;
-            color     : $light-color;
-            transition: .2s ease;
+            position        : absolute;
+            top             : 2rem;
+            right           : 2rem;
+            font-size       : 4rem;
+            cursor          : pointer;
+            color           : var(--lightColor);
+            transition      : .2s ease;
 
             &:hover {
-                color    : $red;
+                color    : var(--red);
                 transform: rotate(90deg);
             }
 
@@ -56,11 +56,11 @@
             }
 
             i {
-                color: $red;
+                color: var(--red);
             }
 
             span {
-                color: $light-color;
+                color: var(--lightColor);
             }
         }
     }

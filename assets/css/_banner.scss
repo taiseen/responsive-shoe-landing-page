@@ -6,7 +6,7 @@
 
         span {
             font-size: 2.5rem;
-            color    : $red;
+            color    : var(--red);
         }
 
         h3 {
@@ -27,24 +27,5 @@
         img {
             width: 100%;
         }
-    }
-}
-
-.btn {
-    margin-top    : 1rem;
-    display       : inline-block;
-    border-radius : 5rem;
-    padding       : 1.2rem 3rem;
-    border        : $border;
-    cursor        : pointer;
-    background    : none;
-    color         : $black;
-    font-size     : 2rem;
-    text-transform: capitalize;
-
-    &:hover {
-        background  : $red;
-        border-color: $red;
-        color       : $white;
     }
 }

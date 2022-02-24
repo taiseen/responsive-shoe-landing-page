@@ -9,15 +9,20 @@
             margin-bottom: 1.5rem;
 
             .box {
+                width        : 100%;
                 padding      : 1.5rem;
                 margin-bottom: 1rem;
                 font-size    : 1.6rem;
-                border-bottom: $border;
-                width        : 100%;
+                border-bottom: var(--border);
 
                 &:focus {
-                    border-color: $red;
+                    border-color: var(--red);
                 }
+            }
+
+            textarea {
+                resize: none;
+                height: 20rem;
             }
         }
 
@@ -25,7 +30,6 @@
             flex: 1 1 41rem;
 
             h3 {
-                padding-bottom: 1rem;
                 @include title(3rem);
             }
 
@@ -38,14 +42,13 @@
                 @include flex(center);
 
                 i {
-
                     height          : 5rem;
                     width           : 5rem;
                     line-height     : 5rem;
                     border-radius   : 50%;
                     font-size       : 2rem;
-                    background-color: $red;
-                    color           : $white;
+                    background-color: var(--red);
+                    color           : var(--white);
                     text-align      : center;
                 }
 
@@ -59,13 +62,12 @@
                 padding-top: 2rem;
 
                 a {
-
-                    font-size   : 3rem;
-                    margin-right: 2.2rem;
-                    color       : $light-color;
+                    font-size: 3rem;
+                    margin   : 0 1.5rem;
+                    color    : var(--lightColor);
 
                     &:hover {
-                        color: $red;
+                        color: var(--red);
                     }
                 }
 

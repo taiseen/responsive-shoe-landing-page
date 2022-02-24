@@ -7,15 +7,15 @@
     font-size       : 3rem;
     line-height     : 5rem;
     text-align      : center;
-    color           : $white;
-    background-color: $red;
+    color           : var(--white);
+    background-color: var(--red);
     cursor          : pointer;
-    z-index         : 10;
     transition      : left .3s ease;
+    z-index         : 10;
 
     &:hover {
-        background-color: $white;
-        color           : $black;
+        background-color: var(--white);
+        color           : var(--black);
     }
 
     &.fa-times {
@@ -27,9 +27,9 @@
     position        : fixed;
     top             : 0;
     left            : -31rem;
-    height          : 100vh;
+    min-height      : 100vh;
     width           : 30rem;
-    background-color: $red;
+    background-color: var(--red);
     padding         : 2rem;
     z-index         : 1;
     transition      : left .3s ease;
@@ -41,17 +41,17 @@
     .logo {
         font-size  : 6rem;
         font-weight: bolder;
-        color      : $white;
+        color      : var(--white);
     }
 
     .navbar {
-        padding: 30% 0;
+        padding: 30% 0 90%;
 
         a {
             display       : block;
             margin        : 2rem 0;
             font-size     : 2rem;
-            color         : $white;
+            color         : var(--white);
             text-transform: capitalize;
 
             &:hover {
@@ -69,13 +69,13 @@
             width      : 4rem;
             line-height: 4rem;
             font-size  : 2rem;
-            color      : $black;
-            background : $white;
+            color      : var(--black);
+            background : var(--white);
             margin     : 0 .3rem;
 
             &:hover {
-                color     : $white;
-                background: $black;
+                color     : var(--white);
+                background: var(--black);
             }
         }
     }
@@ -83,7 +83,7 @@
     .credit {
         text-align : center;
         font-size  : 2.5rem;
-        color      : $white;
+        color      : var(--white);
         margin-top : 3rem;
         line-height: 3rem;
     }

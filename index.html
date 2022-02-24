@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="2"> -->
 
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Nike Shoe</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 
+    <title>Nike Shoe</title>
 </head>
 
 <body>
@@ -109,6 +112,9 @@
                 </div>
             </div>
 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
 
 
@@ -118,7 +124,9 @@
     <section class="product-preview-container">
 
         <div class="product-preview" data-target="p-1">
+
             <div class="fas fa-times"></div>
+            
             <div class="image">
                 <img src="./assets/img/product-img1.jpg" alt="">
             </div>
@@ -138,9 +146,11 @@
                 </div>
                 <a href="#" class="btn">buy now</a>
             </div>
+            
         </div>
 
     </section>
+
 
     <section class="service">
 
@@ -225,6 +235,7 @@
 
             </div>
 
+            <div class="swiper-pagination"></div>
         </div>
 
     </section>
@@ -234,12 +245,13 @@
         <h1 class="heading"><span>contact</span> us</h1>
 
         <div class="row">
+            
             <form action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="number" class="box">
-                <textarea name="" id="" cols="30" rows="5" placeholder="message" class="box"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <input class="box" type="text" placeholder="name">
+                <input class="box" type="email" placeholder="email">
+                <input class="box" type="number" placeholder="number">
+                <textarea class="box" placeholder="message"></textarea>
+                <input class="btn" type="submit" value="Send Message">
             </form>
 
             <div class="contact-info">
@@ -279,7 +291,7 @@
     </section>
 
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"> </script>
     <script src="./assets/js/script.js"></script>
 </body>
 

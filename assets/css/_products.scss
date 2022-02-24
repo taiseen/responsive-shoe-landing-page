@@ -35,12 +35,3 @@
     }
 }
 
-.heading {
-    text-align: center;
-    @include title(4rem);
-    margin-bottom: 3rem;
-
-    span {
-        color: $red;
-    }
-}
