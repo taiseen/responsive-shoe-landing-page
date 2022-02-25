@@ -1,6 +1,6 @@
 4 Jan 2022 
 
-# Nike Shoe - Landing Page | [Live-Link](https://taiseen.github.io/shoe-landing-page)
+# Nike Shoe - landing page | [Live Link](https://taiseen.github.io/shoe-landing-page)
 
 ## Using Tools & Language
 * HTML
@@ -36,9 +36,9 @@
 2. <nav>
 3. <section>
 4. <div>
-5. <p>
-6. <h1>
-7. <h3>
+5. <h1>
+6. <h3>
+7. <p>
 8. <form>
 ```
 
@@ -46,9 +46,9 @@
 
 ```
 1. <a> 
-2. <span>
+2. <i>
 3. <img>
-4. <i>
+4. <span>
 5. <input>
 6. <textarea>
 7. <script>
@@ -58,7 +58,6 @@
 2. inside `<body>` have
     + 1 `<header>` &
     + 6 `<section>` of Block Level Element's
-<br /> 
 3. inside `<section>` use `flex` & `grid` according to style & design making decision.
 4. In parent container for children position control, we can use 2 CSS declaration together:- 
     + `display : flex;`
