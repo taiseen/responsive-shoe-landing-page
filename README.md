@@ -54,6 +54,24 @@
 7. <script>
 ```
 
+
+
+* `6` types of `tag's` are using their attributes ===> `Block + InLine `
+
+| No| Tag Type | Tag Name    | Attributes                          |
+|:--| :--------| :---------- | :-----------------------------------|
+| 1 | block    | `<section>` | id=' ' <b>+</b> class=' '           |
+| 2 | block    | `<div>`     | class=' ' <b>+</b> data-product=' ' |
+| 3 | block    | `<form>`    | action=' '                          |
+| 4 | inline   | `<a>`       | href=' ' <b>+</b> target=' '        |
+| 5 | inline   | `<img>`     | src=' ' <b>+</b> alt=' '            |
+| 6 | inline   | `<input>`   | type=' ' <b>+</b> placeholder=' ' <b>+</b> value=' '  |
+
+
+<br/> <br/>
+
+
+
 1. HTML markup `structured` by `stack` positioning style.
 2. inside `<body>` have
     + 1 `<header>` &
