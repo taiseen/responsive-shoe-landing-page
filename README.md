@@ -60,14 +60,14 @@
 
 * `6` types of `tag's` are using their attributes ===> `Block + InLine `
 
-| No| Tag Type   | Tag Name  | Attributes                               |
-|:--| :--------  | :-------- | :----------------------------------------|
-| 1 | `block`    | <section> | id=' ' + class=' '                       |
-| 2 | `block`    | <div>     | class=' ' + data-product=' '             |
-| 3 | `block`    | <form>    | action=' '                               |
-| 4 | `inline`   | <a>       | href=' ' + target=' '                    |
-| 5 | `inline`   | <img>     | src=' ' + alt=' '                        |
-| 6 | `inline`   | <input>   | type=' ' + placeholder=' ' + value=' '   |
+| No| Tag Type | Tag Name    | Attributes                               |
+|:--| :--------| :---------- | :----------------------------------------|
+| 1 | block    | `<section>` | id=' ' + class=' '                       |
+| 2 | block    | `<div>`     | class=' ' + data-product=' '             |
+| 3 | block    | `<form>`    | action=' '                               |
+| 4 | inline   | `<a>`       | href=' ' + target=' '                    |
+| 5 | inline   | `<img>`     | src=' ' + alt=' '                        |
+| 6 | inline   | `<input>`   | type=' ' + placeholder=' ' + value=' '   |
 
 
 <br/> <br/>
